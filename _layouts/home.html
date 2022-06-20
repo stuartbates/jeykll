@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div class="text-center mt-6">
+    <p>I plan on importing all my old posts here soon.</p>
+    <p>
+        In the meantime here's something I wrote about marketplaces:
+        {% for post in site.posts %}
+        <a href="{{ post.url | relative_url }}">{{post.title}}</a>
+        {% endfor %}
+    </p>
+</div>
